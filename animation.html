@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maurício">
+    <title>Animações</title>
+
+    <style>
+    
+        @keyframes anda{
+            0%{
+                background-color: #303030;
+                transform: translateX(0);
+            }
+
+            /*25%{
+                height: 80px;
+            }
+
+            75%{
+                height: 80px;
+            }*/
+
+            25%, 75%{
+                border-color: green;
+            }
+
+            100%{
+                transform: translateX(200px);
+                background-color: white;
+                color: #111111;
+            }
+        }
+
+        #anima-time-div{
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: #303030;
+            color: white;
+            width: 80px;
+            height: 50px;
+            border: 2px solid red;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        #anima-time-div:nth-of-type(1){
+            animation-name: anda;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            
+            /*animation: anda 2s ease-in-out;*/
+        }
+
+        #anima-time-div:nth-of-type(2){
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; /*vai e volta*/
+            animation-timing-function: ease-in-out;
+
+            /*animation: anda 2s ease-in-out infinite alternate*/
+        }
+
+        #anima-time-div:nth-of-type(3){
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; /*vai e volta*/
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+
+            /*animation: anda 2s ease-in-out 2s infinite alternate*/
+        }
+
+        #anima-time-div:nth-of-type(4){
+            background-color: #2050FF;
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate; /*vai e volta*/
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards; /*altera a forma que começa ou termina*/
+            animation-delay: 2s;
+        }
+
+        #anima-time-div:nth-of-type(5){
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; /*vai e volta*/
+            animation-timing-function: ease-in-out;
+        }
+        
+        #anima-time-div:nth-of-type(5):hover{
+            animation-play-state: paused;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Animation</h1>
+
+    <p>
+        <code>animation: name duration timing-function delay iteration-count direction fill-mode play-state</code>
+    </p>
+
+    <div id="anima-time-div">
+        <p>1</p>
+    </div>
+
+    <div id="anima-time-div">
+        <p>2</p>
+    </div>
+
+    <div id="anima-time-div">
+        <p>3</p>
+    </div>
+
+    <div id="anima-time-div">
+        <p>4</p>
+    </div>
+
+    <div id="anima-time-div">
+        <p>5</p>
+        <p>passe o mouse</p>
+    </div>
+
+</body>
+</html>

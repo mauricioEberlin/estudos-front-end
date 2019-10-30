@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maurício">
+    <title>Checkbox diferentão</title>
+
+    <style>
+        
+        body{
+            font-family: sans-serif;
+        }
+
+        label{
+            display: inline-block;
+        }
+
+        label input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        label input[type="checkbox"]:focus + span{
+            box-shadow: 0px 0px 0px 1px red;
+        }
+
+        label span{
+            display: inline-block;
+            border-radius: 12.5px;
+            width: 60px;
+            height: 25px;
+            background-color: #DDDDDD;
+        }
+
+        label span:before{
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 2px;
+            margin-left: 3px;
+            transition: all 300ms ease-in-out;
+        }
+
+        label input:checked + span{
+            background-color: #FF3015;
+        }
+
+        label input:checked + span:before{
+            transform: translateX(35px);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Esportivos
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Compactos
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <span></span>
+        Comerciais
+    </label>
+
+</body>
+</html>

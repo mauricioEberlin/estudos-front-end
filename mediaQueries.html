@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <title>Media Queries</title>
+
+    <style>
+        body{
+            background-color: #60AAFF;
+            font-family: Arial;
+            font-size: 16px;
+            color: white;
+        }
+
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .container{
+            background-color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        .container div{
+            background-color: #CCCCCC;
+            margin-bottom: 15px;
+            height: 150px;
+            font-size: 22px;
+        }
+
+        @media screen and (min-width: 510px){
+            body{
+                background-color: orange;
+            }
+            .container div{
+                width: calc(50% - 30px);
+                float: left;
+                margin: 15px;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Exemplo de media queries</h1>
+
+    <p>Paragrafo qualquer</p>
+
+    <div class="container clearfix">
+
+        <div>Div 1</div>
+        <div>Div 2</div>
+
+    </div>
+
+    <a href="https://serfrontend.com/cursos">Cursos front-end</a>
+
+
+</body>
+</html>

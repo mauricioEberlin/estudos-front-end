@@ -1,0 +1,42 @@
+*{
+    color:#303030;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+    text-decoration-line: dotted;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+a:visited{
+    color: #000090;
+}
+
+a:hover{
+    color: #303030;
+    font-size: 18px;
+    transition: 500ms;
+}
+
+.qualificacoes{
+    padding-left: 10px;
+    border: 2px solid #009900;
+    width: 50%;
+}
+
+.indentado{
+    text-indent: 5px;
+}
+
+.personalizado{
+    color: #DD0000;
+    font-weight: bold;
+}

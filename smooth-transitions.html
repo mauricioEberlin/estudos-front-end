@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transições suaves CSS</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maurício">
+    <meta name="description" content="Transições suaves">
+    <meta name="keywords" content="Transitions, smooth, css, html">
+
+    <style>
+    
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: #40AACC;
+
+        /*Escolhendo a mudança da largura como propriedade da transição e colocando sua duração*/
+        transition-property: width, height;
+        transition-duration: 1s, 1s;
+        /*Aceleração da animação: linear é a padrão
+        ease-in começa rápido e para bruscamente,
+        ease-out ao contrário
+        ease-in-out mais suave
+        personalizável com o cubic-bezier*/
+        transition-timing-function: ease-in-out, linear;
+        /*(tempo em ms ou s) coloca delay para começar a animação*/
+        transition-delay: 0s, 1s;
+
+    }
+
+    div:hover{
+        width: 600px;
+        height: 600px;
+    }
+    
+    </style>
+
+</head>
+<body>
+    
+<div></div>
+
+</body>
+</html>

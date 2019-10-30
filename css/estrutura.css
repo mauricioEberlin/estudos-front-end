@@ -1,0 +1,102 @@
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0 !important;
+}
+
+header{
+    background-image: url("../img/paisagem36.jpg");
+    background-size: auto;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px 40px;
+    height: 500px;
+}
+
+header li{
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+header li a{
+    color: #EEEEEE;
+    border: 2px solid #EEEEEE;
+    background-color: rgba(100, 100, 100, 0.5);
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration-line: none;
+    font-variant-caps: small-caps;
+}
+
+header li a:hover{
+    background-color: rgba(100, 100, 100, 0.9);
+    transition: 500ms;
+}
+
+nav{
+    text-align: right;
+}
+
+main{
+    background-color: #CCCCCC;
+    padding: 50px;
+}
+
+footer{
+    color: #EEEEEE;
+    text-align: center;
+    background-color: #606060;
+    padding: 50px;
+}
+
+h1{
+    color: #EEEEEE;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px #404040;
+}
+
+h2{
+    text-indent: 10px;
+}
+
+.titulo-principal{
+    text-align: center;
+    margin: 100px auto;
+    width: 600px;
+    text-transform: uppercase;
+}
+
+.descricao-header{
+    color: #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
+    background-color: rgba(30, 30, 30, 0.5);
+    padding: 15px 15px;
+    text-align: center;
+    margin: auto;
+    width: 290px;
+}
+
+.imagens-topicos{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px; 
+    overflow: auto;  
+}
+
+.imagens-topicos img{
+    border: 1px solid #CCCCCC;
+    width: 31%;
+    margin: 0.9%;
+    float: left;
+}
+
+.conteudo{
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.fundo-branco{
+    background-color: #EEEEEE;
+}

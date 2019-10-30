@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Maurício">
+    <title>Colocando em prática 1</title>
+
+    <style>
+    
+    body{
+        font-family: sans-serif;
+    }
+    
+    a[target="_blank"]:after{
+        content: url(img/novaJanela.png);
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    a[href$=".pdf"]:before{
+        content: url(img/iconePdf.png);
+        height: 15px;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .chk{
+        display: inline-block;
+        border: 2px solid #aaa;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    label{
+        display: inline-block;
+        height: 15px;
+    }
+
+    input[type="checkbox"]{
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    input[type="checkbox"] + label .chk{
+        border-radius: 5px;
+    }
+
+    input[type="checkbox"]:checked + label .chk{
+        background: #666666;
+        position: relative;
+    }
+
+    input[type="checkbox"]:checked + label .chk:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        bottom: 4px;
+        left: 4px;
+        right: 4px;
+        border: 2px solid #FFFFFF;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(45deg);
+        box-sizing: border-box;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Estrutura básica</h1>
+
+    <a href="http://serfrontend.com" target="_blank"> Visite a página</a>
+    <br>
+    <a href="documento1.pdf">Download do PDF</a>
+    <br>
+    <hr>
+
+    <input type="checkbox" name="qualquer" id="check">
+    <label for="check"><span class="chk"></span>Aceito os termos de contrato</label>
+
+</body>
+</html>
